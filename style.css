@@ -362,4 +362,7 @@ input, textarea {
       width: 40px;
       margin: 15px;
     }
+    .social img{
+      width: 25px;
+    }
 }
