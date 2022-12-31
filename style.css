@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("body-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: sticky;
+  top: 0px;
+  padding: 15px;
+  transition: 0.5s;
+}
+.header-sticky{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  padding: 8px;
+  background-color: grey;
+  transition: 0.5s;
+  z-index: 1;
+}
+header ul {
+  list-style-type: none;
+}
+
+header .menu li {
+  display: inline;
+}
+header li a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 15px;
+}
+header li a:hover{
+  color: black;
+  text-shadow: 2px 2px 10px;
+}
+.hireme{
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.hireme:hover{
+  color: white;
+}
+header .logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.content{
+    padding: 30px 150px;
+}
+.content h2{
+    color: white;
+}
+.content span{
+    font-size: 350%;
+}
+.btn-one{
+    font-size: 12px;
+    padding: 6px 10px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px;
+    border-radius: 3px;
+    transition: 0.5s;
+
+  }
+.btn-one:hover{
+    padding: 8px 18px;
+}
+
+/* About Section */
+.about{
+    background-color: white;
+    color: black;
+    padding: 35px 20px;
+}
+.about h1{
+    text-align: center;
+    margin: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.self{
+    width: 28%;
+    margin-right: 50px;
+    border-radius: 50%;
+    
+}
+.container p{
+    width: 35%;
+    font-size: 18px;
+}
+
+/* My Work Section */
+.work{
+  color: black;
+  padding: 35px 20px;
+}
+.work h1{
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+.work-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.work-box>div{
+  flex-basis: 200px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  flex-grow: 1;
+  flex-shrink: 1; 
+}
+.work-box>div:hover{
+  flex-shrink: 0;
+  flex-grow: 5;
+  position: relative;
+}
+.work-box img{
+  width: 95%;
+  box-shadow: 5px 5px 7px ;
+ }
+ .work-tag div{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+
+ }
+ .work-box h5{
+  color: white;
+ }
+.work-box p{
+  font-size: 10px;
+  color: white;
+}
+.work-tag:hover div{
+  display: block;
+}
+.work-tag a{
+  border: none;
+  font-size: 10px;
+  color: black;
+  background-color: white;
+  padding: 3px 8px;
+  text-decoration: none;
+}
+
+ 
+
+/* Skills Section */
+.skills{
+  background-color: white;
+  color: black;
+  padding: 35px 20px;
+}
+.skills h1{
+  text-align: center;
+  margin: 20px;
+}
+.skills-list{
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skills-list div{
+  margin: 20px;
+  flex-basis: 300px;
+  padding: 30px;
+  box-shadow: 5px 5px 10px ;
+}
+.skills-list li{
+  list-style-type: none;
+}
+.skills-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills-container img{
+  width: 60px;
+  margin: 20px;
+}
+.skills-container .ansys{
+  width: 90px;
+}
+
+
+
+
+/* Contact Section */
+.contact{
+  color: white;
+  padding: 35px 20px;
+}
+.contact h1{
+  text-align: center;
+  margin: 20px;
+}
+.contact p{
+  margin: 25px auto;
+/*   text-align: center;
+ */  width: 75%;
+/*   background-color: black;
+ */}
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+/*   border: 2px solid green;
+ */}
+.contact-box{
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+}
+ .link{
+  padding: 10px 10px;
+  margin: 20px;
+ }
+ .link a{
+  text-decoration: none;
+  padding: 10px 10px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+ }
+ .social{
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+ }
+ .social img{
+  width: 35px;
+  margin: 0px 10px;
+ }
+.contact-form{
+  width: 50%;
+  margin: 20px 0px;
+
+/*   border: 2px solid blue;
+ */}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  
+}
+.footer{
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    header .logo {
+        font-size: 20px;
+      }
+    header li a {
+        margin-left: 8px;
+    }
+      .menu a{
+        font-size: 15px;
+      }
+      .content span{
+        font-size: 220%;
+    }
+    .content{
+        padding: 30px 100px;
+    }
+    .btn-one{
+        font-size: 11px;
+        padding: 5px 10px;
+        box-shadow: 5px 5px 10px;
+        border-radius: 3px;
+    }
+    .self{
+        width: 30%;
+        margin-right: 40px;
+    }
+    .container p{
+        width: 35%;
+        font-size: 14px;
+    }
+    .work-box div{
+      flex-basis: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .menu{
+    display: none;
+    } 
+    header .logo {
+        font-size: 20px;
+      }
+      .header{
+        justify-content: flex-start;
+      }
+      .content span{
+        font-size: 220%;
+    }
+    .content{
+        padding: 30px 15px;
+    }
+    .btn-one{
+        font-size: 11px;
+        padding: 5px 10px;
+        box-shadow: 5px 5px 10px;
+        border-radius: 3px;
+    }
+    .self{
+        width: 90%;
+        margin: 20px;
+    }
+    .container p{
+        width: 80%;
+        font-size: 15px;
+    }
+    .contact-box{
+      width: 80%;
+    }
+    .contact-form{
+      width: 70%;
+    }
+    .skills-container img{
+      width: 40px;
+      margin: 15px;
+    }
+}
